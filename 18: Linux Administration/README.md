@@ -12,7 +12,7 @@ Details:
 Before Submission:
 -
 
-![](image/Start.png)
+![](Images/Start.png)
 
 Scenario:
 -
@@ -20,7 +20,7 @@ Scenario:
     Dedeker Randolph, a new temporary security consultant, requires a workstation. Ms. Randolph started today and does not 
     have access to her Kali Linux workstation, nor is that workstation setup to access the network properly. Company network 
     policy dictates that all devices on the network must have the IP address, gateway, and DNS server statically assigned in 
-    it by our IT staff (i.e. you). Company policy also dictates that all systems have a up to date DNS entry in the DNS server. 
+    it by our IT staff (i.e. you). Company policy also dictates that all systems have a up to date DNS entry in the DNSserver. 
     This system will be integrated into the overall network but will not be managed by Active Directory. This is due to the 
     nature of Dedeker's work which is highly sensitive. Thus, her system will be on the network and she will need a local 
     account on her workstation, not our single sign-on solution.
@@ -41,6 +41,10 @@ Your username/password to access all virtual machines and services within the wo
     
 Until the IP address is set correctly all but one of the checks will be orange and display the status "unknown".
 
+Network Map:
+-
+<img src="Images/Network-map.jpg" >
+
 Challenge Meeting:
 -
 >Dedeker Randolph @drandolph: Hello, I was scheduled to begin work today but I seem to have no access to my workstation. The workstation at my desk does not really seem to be setup at all! Please help!
@@ -59,25 +63,30 @@ Challenge Meeting:
 
 >Dedeker Randolph @drandolph: All that sounds fine to me. As one other thing I'd like @playerone, make sure my default shell is bash. Other then that we are good! Thanks!
 
-Solution to the challenege
-#Created User this adds bash and the home directory #but if you use sudo useradd then you need the command to add bash and home directory
+Solution to the challenege:
+-
 
-#Create new account/user
+#Created User this adds bash and the home directory 
+#but if you use sudo useradd then you need the command to add bash and home directory
 
-sudo adduser drandolph
+#Create new account/user:
+	
+	sudo adduser drandolph
+
 #Give sudo permission
 
-sudo usermod -a -G sudo drandolph
+	sudo usermod -a -G sudo drandolph
+	or
+	sudo ussermod -aG sudo drandolph
 
-or
-
-sudo ussermod -aG sudo drandolph
 #Configured network interfaces
 
-$ Sudo nano  /etc/network/interfaces
+	sudo nano  /etc/network/interfaces
+	
 #The primary network interface
 
 	allow-hotplug  eth0
+	
 	#iface eth0 inet eth0
 	Inface eth0 inet static
 	    address 172.16.30.6
@@ -86,71 +95,105 @@ $ Sudo nano  /etc/network/interfaces
 	    Gateway 172.16.30.2
 	    network 172.16.30.0
 
-    #dns-* options are implemented by the resolvconf package, if installed
-      ad.daswebs.com 172.16.30.5
+    	#dns-* options are implemented by the resolvconf package, if installed
+      	ad.daswebs.com 172.16.30.5
+
+![](Images/Network-int-config.PNG)
+
 #turned on the interface
 
-ifdown eth0
-ifup eth0
-ip a
+	ifdown eth0
+	ifup eth0
+	ip a
+	
 #Configure domain host dns #Edith the DNS resolve file
 
-$ sudo nano /etc/resolv.conf
+	sudo nano /etc/resolv.conf
+
 #Copy and paste this file make sure you edith the domain, search and nameserver as required
 
-domain daswebs.com
-search ad.daswebs.com
-nameserver 172.16.30.5
-nameserver 8.8.8.8
+	domain daswebs.com
+	search ad.daswebs.com
+	nameserver 172.16.30.5
+	nameserver 8.8.8.8
+
+![](Images/DNS-Config.PNG)
+
 #Add DNS entry for her work station to the DNS Server on the domain controller
 
 #on the domain controller,
-  #I opened server manager then go to DNS
-     #forward-looking zone
-         #ad.daswebs.com and right click the white space to added and A record  
-          Name: SecConsultantKali 
+#I opened server manager then go to DNS
+#forward-looking zone
+#ad.daswebs.com and right click the white space to added and A record  
+          
+	  Name: SecConsultantKali 
           IP: 172.16.30.6
+
+Completed:
+-
+
+![](Images/Submissions.png)
+
 Extras:
+-
+
 #Change default to bash
 
-chsh -s /bin/bash username
+	chsh -s /bin/bash username
+
 #swtich users
 
-su drandolph
+	su drandolph
+
 #change to root
 
-sudo su -
+	sudo su -
+
 #check users and permissions
 
-cat /etc/passwd
-Skill Gained:
+	cat /etc/passwd
+
+Skills Gained:
+-
+
 NICE Framework 1.0 KSA:
-112 Knowledge of server administration and systems engineering theories, concepts, and methods
-234 Skill in using sub-netting tools
-271 Knowledge of common network tools (e.g., ping, traceroute, nslookup)
-41 Knowledge of organization's Local Area Network (LAN)/Wide Area Network (WAN) pathways
-72 Knowledge of local area network (LAN) and wide area network (WAN) principles and concepts, including bandwidth management
-81 Knowledge of network protocols (e.g., Transmission Control Protocol and Internet Protocol [TCP/IP], Dynamic Host Configuration Protocol [DHCP]) and directory services (e.g., Domain Name System [DNS])
-92 Knowledge of how traffic flows across the network (e.g., Transmission Control Protocol and Internet Protocol [TCP/IP], Open System Interconnection model [OSI], Information Technology Infrastructure Library, v3 [ITIL])
+-
+
+- 112 Knowledge of server administration and systems engineering theories, concepts, and methods
+- 234 Skill in using sub-netting tools
+- 271 Knowledge of common network tools (e.g., ping, traceroute, nslookup)
+- 41 Knowledge of organization's Local Area Network (LAN)/Wide Area Network (WAN) pathways
+- 72 Knowledge of local area network (LAN) and wide area network (WAN) principles and concepts, including bandwidth management
+- 81 Knowledge of network protocols (e.g., Transmission Control Protocol and Internet Protocol [TCP/IP], Dynamic Host Configuration 
+- Protocol [DHCP]) and directory services (e.g., Domain Name System [DNS])
+- 92 Knowledge of how traffic flows across the network (e.g., Transmission Control Protocol and Internet Protocol [TCP/IP], 
+- Open System Interconnection model [OSI], Information Technology Infrastructure Library, v3 [ITIL])
+
 ICE Framework 1.0 Competencies:
-Hardware
-Infrastracture Design
-Systems Life Cycle
-Telecommunications
+-
+
+- Hardware
+- Infrastracture Design
+- Systems Life Cycle
+- Telecommunications
+
 NICE Framework KSA:
-A0055. Ability to operate common network tools (e.g., ping, traceroute, nslookup).
-A0058. Ability to execute OS command line (e.g., ipconfig, netstat, dir, nbtstat).
-A0059. Ability to operate the organization's LAN/WAN pathways.
-K0011. Knowledge of capabilities and applications of network equipment including routers, switches, bridges, servers, transmission media, and related hardware.
-K0029. Knowledge of organization's Local and Wide Area Network connections.
-K0050. Knowledge of local area and wide area networking principles and concepts including bandwidth management.
-K0061. Knowledge of how traffic flows across the network (e.g., Transmission Control Protocol [TCP] and Internet Protocol [IP], Open System Interconnection Model [OSI], Information Technology Infrastructure Library, current version [ITIL]).
-K0076. Knowledge of server administration and systems engineering theories, concepts, and methods.
-K0111. Knowledge of network tools (e.g., ping, traceroute, nslookup)
-K0332. Knowledge of network protocols such as TCP/IP, Dynamic Host Configuration, Domain Name System (DNS), and directory services.
-S0162. Skill in applying various subnet techniques (e.g., CIDR)
+-
+- A0055. Ability to operate common network tools (e.g., ping, traceroute, nslookup).
+- A0058. Ability to execute OS command line (e.g., ipconfig, netstat, dir, nbtstat).
+- A0059. Ability to operate the organization's LAN/WAN pathways.
+- K0011. Knowledge of capabilities and applications of network equipment including routers, switches, bridges, servers, transmission media, and related hardware.
+- K0029. Knowledge of organization's Local and Wide Area Network connections.
+- K0050. Knowledge of local area and wide area networking principles and concepts including bandwidth management.
+- K0061. Knowledge of how traffic flows across the network (e.g., Transmission Control Protocol [TCP] and Internet Protocol [IP], Open System Interconnection Model [OSI], Information Technology Infrastructure Library, current version [ITIL]).
+- K0076. Knowledge of server administration and systems engineering theories, concepts, and methods.
+- K0111. Knowledge of network tools (e.g., ping, traceroute, nslookup)
+- K0332. Knowledge of network protocols such as TCP/IP, Dynamic Host Configuration, Domain Name System (DNS), and directory services.
+- S0162. Skill in applying various subnet techniques (e.g., CIDR)
+
 CAE Knowledge Units:
-Basic Networking
-Network Technology and Protocols
-Operating Systems Administration
+
+- Basic Networking
+- Network Technology and Protocols
+- Operating Systems Administration
 
