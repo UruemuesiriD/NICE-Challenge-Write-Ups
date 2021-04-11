@@ -32,10 +32,10 @@
 
 ## Meeting Notes:
 
-> Thanh Akasaka
+`Thanh Akasaka`
 Hey @gthatcher, I was trying to get something working with my IDE so I could test some code and noticed that my firewall was off. Not sure if that was something that is of concern or not so I decided to make a ticket about it.
 
-> Gary Thatcher
+`Gary Thatcher`
 Thanks for letting me know @takasaka, but it shouldn't be a big deal because we just had a vendor put in that new pfSense firewall box that protects the whole network.
 
 >System
@@ -44,13 +44,13 @@ Ticket closed by Gary Thatcher
 >System
 Ticket reopened by Gary Thatcher
 
-> Gary Thatcher
+`Gary Thatcher`
 So we just hired a new Security Analyst @playerone, and I wanted to reopen this ticket as a good first task. @playerone can you take a look into the status of our systems security? Go through each device on our network and make note of anything that stands out as a security issue - or potential security issue that we should consider changing. Don't worry about making any changes, this is just a review of where we are now. Your report will be used to make informed plan of actions.
 
-> Gary Thatcher
+`Gary Thatcher`
 Please include the following in your report for any issues you find: State the vulnerability, explain the vulnerability, explain why it may be a risk, and make recommendations on how this risk can be mitigated or fixed.
 
-> Gary Thatcher
+`Gary Thatcher`
 @playerone, you should look at the authentication and firewall settings on Prod-Web, Dev-Web, Database, and Domain-Controller servers as well as the operational security regarding their critical roles as web hosts (Apache, IIS), back-end database server (MySQL), and Active Directory respectively.
 
 ## Network Map:
