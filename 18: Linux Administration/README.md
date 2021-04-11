@@ -17,13 +17,13 @@ Before Submission:
 Scenario:
 -
 
-    Dedeker Randolph, a new temporary security consultant, requires a workstation. Ms. Randolph started today and does not 
-    have access to her Kali Linux workstation, nor is that workstation setup to access the network properly. Company network 
-    policy dictates that all devices on the network must have the IP address, gateway, and DNS server statically assigned in 
-    it by our IT staff (i.e. you). Company policy also dictates that all systems have a up to date DNS entry in the DNSserver. 
-    This system will be integrated into the overall network but will not be managed by Active Directory. This is due to the 
-    nature of Dedeker's work which is highly sensitive. Thus, her system will be on the network and she will need a local 
-    account on her workstation, not our single sign-on solution.
+    Dedeker Randolph, a new temporary security consultant, requires a workstation. Ms. Randolph started today and 
+    does not have access to her Kali Linux workstation, nor is that workstation setup to access the network properly. 
+    Company network policy dictates that all devices on the network must have the IP address, gateway, and DNS server 
+    statically assigned in it by our IT staff (i.e. you). Company policy also dictates that all systems have a up to 
+    date DNS entry in the DNSserver. This system will be integrated into the overall network but will not be managed 
+    by Active Directory. This is due to the nature of Dedeker's work which is highly sensitive. Thus, her system will 
+    be on the network and she will need a local account on her workstation, not our single sign-on solution.
 
 Additional Information:
 -
@@ -47,21 +47,27 @@ Network Map:
 
 Challenge Meeting:
 -
->Dedeker Randolph @drandolph: Hello, I was scheduled to begin work today but I seem to have no access to my workstation. The workstation at my desk does not really seem to be setup at all! Please help!
+`Dedeker Randolph @drandolph:`
+Hello, I was scheduled to begin work today but I seem to have no access to my workstation. The workstation at my desk does not really seem to be setup at all! Please help!
 
->Richard LeGrand @rlegrand: I JUST GOT THIS EMAIL FROM THE NEW TEMPORARY SECURITY CONSULTANT. MS. RANDOLPH DOES NOT YET HAVE AN ACCOUNT OR CONNECTED SYSTEM THIS SHOULD HAVE BEEN DONE LONG AGO AND I DON'T HAVE TIME FOR THIS, FIX IT.
+`Richard LeGrand @rlegrand:`
+I JUST GOT THIS EMAIL FROM THE NEW TEMPORARY SECURITY CONSULTANT. MS. RANDOLPH DOES NOT YET HAVE AN ACCOUNT OR CONNECTED SYSTEM THIS SHOULD HAVE BEEN DONE LONG AGO AND I DON'T HAVE TIME FOR THIS, FIX IT.
 
->Gary Thatcher @gthatcher: Hello @playerone as you can see things are a bit stressful lately and I have not had time to work on some of these more trivial matters, many other things have taken my attention so I leave the task in your capable hands. @gbates will tell you more.
+`Gary Thatcher @gthatcher:`
+Hello @playerone as you can see things are a bit stressful lately and I have not had time to work on some of these more trivial matters, many other things have taken my attention so I leave the task in your capable hands. @gbates will tell you more.
 
->Gilly Bates @gbates: Hi @playerone, I have been assigned to help you along with adding Ms. Randolph, our new temporary security consultant, to our network. There are certain considerations that must be taken into account. Her workstation should be assigned 172.16.30.6 for the IP address; make sure to set the right subnet mask as well. We are a /24 network if you didn't know. Based on the IP address that would mean her workstation is in the Internal subnet and the gateway you set should reflect as such.
+`Gilly Bates @gbates:` 
+Hi @playerone, I have been assigned to help you along with adding Ms. Randolph, our new temporary security consultant, to our network. There are certain considerations that must be taken into account. Her workstation should be assigned 172.16.30.6 for the IP address; make sure to set the right subnet mask as well. We are a /24 network if you didn't know. Based on the IP address that would mean her workstation is in the Internal subnet and the gateway you set should reflect as such.
 
->The DNS server address also needs to be manually set on her workstation so it can resolve internal and external names. Since our DNS server also happens to be our Domain-Controller, you can find it's IP address on the network map.
+The DNS server address also needs to be manually set on her workstation so it can resolve internal and external names. Since our DNS server also happens to be our Domain-Controller, you can find it's IP address on the network map.
 
->Oh! Almost forgot, you will need to add a DNS entry for her workstation in the DNS server on the Domain-Controller. Her workstation FQDN should be SecConsultantKali.ad.daswebs.com and to make it all match up the workstation hostname needs to be set to SecConsultantKali.
+Oh! Almost forgot, you will need to add a DNS entry for her workstation in the DNS server on the Domain-Controller. Her workstation FQDN should be SecConsultantKali.ad.daswebs.com and to make it all match up the workstation hostname needs to be set to SecConsultantKali.
 
->Gilly Bates @gbates: So.. that takes care of all the network stuff I think. Once you are done with that you need to make sure she has sufficent local machine access so she can get her sensitive work done. Our naming guidelines are always first initial plus last name (all lowercase) for usernames so we will just do that here for Ms. Randolph. Not sure how you usually create users but just make sure her user account also gets a home directory in the usual /home/herusername/ way. Also, since I'm not sure what she is doing, or if we should ask, just give her full sudo access on her workstation. Anything else @drandolph?
+`Gilly Bates @gbates:` 
+So.. that takes care of all the network stuff I think. Once you are done with that you need to make sure she has sufficent local machine access so she can get her sensitive work done. Our naming guidelines are always first initial plus last name (all lowercase) for usernames so we will just do that here for Ms. Randolph. Not sure how you usually create users but just make sure her user account also gets a home directory in the usual /home/herusername/ way. Also, since I'm not sure what she is doing, or if we should ask, just give her full sudo access on her workstation. Anything else @drandolph?
 
->Dedeker Randolph @drandolph: All that sounds fine to me. As one other thing I'd like @playerone, make sure my default shell is bash. Other then that we are good! Thanks!
+`Dedeker Randolph @drandolph:` 
+All that sounds fine to me. As one other thing I'd like @playerone, make sure my default shell is bash. Other then that we are good! Thanks!
 
 Solution to the challenege:
 -
