@@ -12,7 +12,7 @@ Details:
 Before Submission:
 -
 
-![ ](image/Start.png
+![](image/Start.png)
 
 Scenario:
 -
