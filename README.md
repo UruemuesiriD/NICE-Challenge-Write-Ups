@@ -4,7 +4,7 @@ The NICE Challenge Project develops real-world cybersecurity challenges within v
 
 Lab Write Ups for previous NICE Challenge(s)
 -
-Challenge 18 Linux Administration 201: 101 + Network Integration
+[Challenge 18 Linux Administration 201: 101 + Network Integration](https://github.com/pendaflex247/NICE-Challenge-Write-Ups/blob/main/18:%20Linux%20Administration/README.md)
 
 	Author: Jeff Echlin
 	Framework Category: Operate and Maintain
@@ -12,18 +12,20 @@ Challenge 18 Linux Administration 201: 101 + Network Integration
 	Work Role: Network Operations Specialist
 	Task Description: Integrate new systems into existing network architecture. (T0129)
 
-Challenge 20 Malware Aftermath Cleanup Complexity 2:
+[Challenge 20 Malware Aftermath Cleanup.](https://github.com/pendaflex247/NICE-Challenge-Write-Ups/blob/main/19:%20Cyber%20Defense%20Incident%20Responder%20Malware%20Aftermath%20Cleanup/README.md)
 	
 	Author: Bailey Kasin 
 	Framework Category: Protect and Defend Specialty 
 	Area: Incident Response Work 
 	Role: Cyber Defense Incident Responder Task 
-	Task Description: Collect intrusion artifacts (e.g., source code, malware, Trojans) and use discovered data to enable mitigation of potential cyber defense incidents within the enterprise. (T0278)
+	Task Description: Collect intrusion artifacts (e.g., source code, malware, Trojans) and use discovered 
+	data to enable mitigation of potential cyber defense incidents within the enterprise. (T0278)
 
-Challenge 22 4/3 - A Sense of Security
+[Challenge 22 - A Sense of Security](https://github.com/pendaflex247/NICE-Challenge-Write-Ups/blob/main/21:%20A%20Sense%20of%20Security/README.md)
 
 	Author: Patrick Gillespie Jr.
 	Framework Category: Operate and Maintain
 	Specialty Area: Systems Analysis
 	Work Role: Systems Security Analyst
-	Task Description: Perform security reviews, identify gaps in security architecture, and develop a security risk management plan. (T0177
+	Task Description: Perform security reviews, identify gaps in security architecture, and develop a security 
+	risk management plan. (T0177
