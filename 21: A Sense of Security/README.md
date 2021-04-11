@@ -75,18 +75,29 @@ Work:
 		
     nmap 172.160.10.0/24 --script vuln -oN /root/Desktop/vuln10.txt
 		
-Subnet10
-Image
+Subnet10 Nmap Scan Output
 
-Subnet 20
-Image
+<img src="Images/Subnet10.0.png" >
+<img src="Images/Subnet10.1.png" >
 
-Subnet 30
-Image
 
-State the vulnerability, explain the vulnerability, explain why it may be a risk, and make recommendations on how this risk can be mitigated or fixed.
+Subnet 20 Nmap Scan Output
+<img src="Images/Subnet20.0.png" >
+<img src="Images/Subnet20.1.png" >
+<img src="Images/Subnet20.2.png" >
+<img src="Images/Subnet20.3.png" >
+
+Subnet 30 Nmap Scan Output
+<img src="Images/Subnet30.png" >
+<img src="Images/Subnet30.2.png" >
+<img src="Images/Subnet30.3.png" >
+<img src="Images/Subnet30.4.png" >
+<img src="Images/Subnet30.5.png" >
+
+Obejective: State the vulnerability, explain the vulnerability, explain why it may be a risk, and make recommendations on how this risk can be mitigated or fixed.
 
 1. The following are prone to the Slowloris DOS attack:
+-
 
    - Web server 172.16.10.2 and 
    - Database server (172.16.20.4), 
@@ -97,6 +108,7 @@ State the vulnerability, explain the vulnerability, explain why it may be a risk
   Slowloris DOS attack, this attack tries to keep many connections to the target web server open and hold them open as long as possible. it accomplishes this by opening connections to the target web server and sending a partial request. By doing so, it starves the HTTP server's resources causing Denial of service. 
 	
  Mitigation: 
+ 
 		- Slowloris DDoS attacks can be mitigated by following the following steps:
 		- Increase the maximum number of clients the Web server will allow
 		- Limit the number of connections a single IP address is allowed to attempt
@@ -104,6 +116,7 @@ State the vulnerability, explain the vulnerability, explain why it may be a risk
 		- Constrain the amount of time a client is permitted to stay connected.
 	
   #In the case of Apache Web servers, several modules can be employed to prevent damage from a Slowloris DDoS attack. These modules include:
+  
 		- Mod_limitipconn
 		- Mod_qos
 		- Mod_evasive
@@ -116,22 +129,24 @@ State the vulnerability, explain the vulnerability, explain why it may be a risk
 	Source: https://www.netscout.com/what-is-ddos/slowloris-attacks
 
 2. The listed host are proto brute force attack:
+-
+
   - www.deswebs.com (172.16.10.7, 172.16.20.11) 
 	
   Vulnerability: 
 	
   weak password this can easily be exploited by brute force. A brute-force attack consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing a combination correctly. The attacker systematically checks all possible passwords and passphrases until the correct one is found.
 	
-  mitigation:
+  Mitigation:
   
-   - Change password to a strong one, make sure the new password meets the following characteristics
+  	 - Change password to a strong one, make sure the new password meets the following characteristics
 	 - At least 8 characters—the more characters, the better.
 	 - A mixture of both uppercase and lowercase letters.
-   - A mixture of letters and numbers.
+   	 - A mixture of letters and numbers.
 	 - Inclusion of at least one special character, e.g., ! @ # ? ]
 
-3. Unknow ports should be closed
-	49152, 49153, 49154, 49155, 4915,49158, 49165,49175, and 49176 
-  
-  - should be closed if no applications are running on them, it is useful to know exactly what services/ processes are listening to them, and also recommend running multiple anti-virus/anti-malware scans to rule out the possibility of active malicious software.
+3. Unknow ports should be closed:
+-
+	   - 49152, 49153, 49154, 49155, 4915,49158, 49165,49175, and 49176 
+  	   - should be closed if no applications are running on them, it is useful to know exactly what services/ processes are listening to them, and also recommend running multiple anti-virus/anti-malware scans to rule out the possibility of active malicious software.
 
