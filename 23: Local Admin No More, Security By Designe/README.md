@@ -84,11 +84,11 @@ To recap...Fix the identified local admin security vulnerability with AD changes
    
      Create OU
   
-	<img src="Images/OU.PNG" >
+	<img src="Images/OU.png" >
   
      Add users to OU
   
-  	<img src="Images/OU-add-Users.PNG" >
+  	<img src="Images/OU-add-Users.png" >
   
 2. Created New GPO Named DasAmdin root Domain (DesSecGroup) level of AD
 
@@ -118,7 +118,7 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	
     Link the created DesAdmins to the ad.daswebs.com
   
-  	<img src="Images/GPO2-link.PNG" >
+  	<img src="Images/GPO2-link.png" >
   
     Enforce the linked DesAdmins to the ad.daswebs.com
    
@@ -155,26 +155,25 @@ To recap...Fix the identified local admin security vulnerability with AD changes
   	<img src="Images/GPO-Restrictions4.png" >
   	<img src="Images/GPO-Restrictions5.png" >
   
-  5. Added TechAdmins and Domain Admins to Restricted Group
+5. Added TechAdmins and Domain Admins to Restricted Group
 	
-	○ Under computer configuration > windows Settings> Security Settings> Restricted Groups
-	○ Right click on restricted Groups
-	○ Click on Add group
-	○ Click on browse
-	○ Click Okay
-	○ Click on the Administrator you added and the click properties
-	○ Under Members of this Group: Add the TechAdmins and the Domain Admins Groups
-	○ Under This group is a member of: Add Administrators
-	○ Click okay.
+		○ Under computer configuration > windows Settings> Security Settings> Restricted Groups
+		○ Right click on restricted Groups
+		○ Click on Add group
+		○ Click on browse
+		○ Click Okay
+		○ Click on the Administrator you added and the click properties
+		○ Under Members of this Group: Add the TechAdmins and the Domain Admins Groups
+		○ Under This group is a member of: Add Administrators
+		○ Click okay.
 	
-   Add user to restricted group
-   First add the built-in Administrators group 
-      
-   <img src="Images/GPO-Restrictions6.png" >
-   <img src="Images/GPO-Restrictions7.png" >
-   <img src="Images/GPO-Restrictions8.png" >
-   <img src="Images/GPO-Restrictions9.png" >
-   <img src="Images/GPO-Restrictions10.png" >
+    Add user to restricted group
+    First add the built-in Administrators group 
+   	<img src="Images/GPO-Restrictions6.png" >
+   	<img src="Images/GPO-Restrictions7.png" >
+   	<img src="Images/GPO-Restrictions8.png" >
+   	<img src="Images/GPO-Restrictions9.png" >
+   	<img src="Images/GPO-Restrictions10.png" >
   
   Add user Domain Admins & TechAdmins to the created restricted Administrators group
   
@@ -184,5 +183,50 @@ To recap...Fix the identified local admin security vulnerability with AD changes
   Completed 
   
   <img src="Images/Finish1.1.png" >
-  
-  
+
+## NICE Framework KSA
+
+	K0006. Knowledge of specific operational impacts of cybersecurity lapses.
+	K0040. Knowledge of vulnerability information dissemination sources 
+	(e.g., alerts, advisories, errata, and bulletins).
+	K0044. Knowledge of cybersecurity and privacy principles and organizational 
+	requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
+	K0049. Knowledge of information technology (IT) security principles and methods (e.g., firewalls, demilitarized zones, encryption).
+	K0056. Knowledge of network access, identity, and access management (e.g., public key infrastructure, Oauth, OpenID, SAML, SPML).
+	K0060. Knowledge of operating systems.
+	K0075. Knowledge of security system design tools, methods, and techniques.
+	K0174. Knowledge of networking protocols.
+	K0263. Knowledge of information technology (IT) risk management policies, requirements, and procedures.
+	K0276. Knowledge of security management.
+	S0022. Skill in designing countermeasures to identified security risks.
+	S0031. Skill in developing and applying security system access controls.
+	S0147. Skill in assessing security controls based on cybersecurity principles and tenets. (e.g., CIS CSC, NIST SP 800-53, Cybersecurity Framework, etc.).
+
+## CAE Knowledge Units
+
+	Cybersecurity Foundations
+	Cybersecurity Principles
+	IT Systems Components
+	Operating Systems Concepts
+	Operating Systems Hardening
+	Windows System Administration
+	
+##  NICE Framework 1.0 KSA
+	177. Skill in designing countermeasures to identified security risks
+	179. Skill in designing security controls based on information assurance (IA) principles and tenets
+	191. Skill in developing and applying security system access controls
+	58. Knowledge of known vulnerabilities from alerts, advisories, errata, and bulletins
+	63. Knowledge of information assurance (IA) principles and organizational requirements that are 
+	relevant to confidentiality, integrity, availability, authentication, and non-repudiation
+	70. Knowledge of information technology (IT) security principles and methods (e.g., firewalls, demilitarized zones, encryption)
+	90. Knowledge of operating systems
+
+## NICE Framework 1.0 Competencies
+	Configuration Management
+	Identity Management
+	Information Assurance
+	Information Systems
+	Network Security
+	Operating Systems
+	
+
