@@ -118,7 +118,7 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	
     Link the created DesAdmins to the ad.daswebs.com
   
-  	<img src="Images/GPO2-link.png" >
+  	<img src="Images/GPO2-link .PNG" >
   
     Enforce the linked DesAdmins to the ad.daswebs.com
    
@@ -191,8 +191,10 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	(e.g., alerts, advisories, errata, and bulletins).
 	K0044. Knowledge of cybersecurity and privacy principles and organizational 
 	requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
-	K0049. Knowledge of information technology (IT) security principles and methods (e.g., firewalls, demilitarized zones, encryption).
-	K0056. Knowledge of network access, identity, and access management (e.g., public key infrastructure, Oauth, OpenID, SAML, SPML).
+	K0049. Knowledge of information technology (IT) security principles and methods (e.g., firewalls, 
+	demilitarized zones, encryption).
+	K0056. Knowledge of network access, identity, and access management (e.g., public key infrastructure, 
+	Oauth, OpenID, SAML, SPML).
 	K0060. Knowledge of operating systems.
 	K0075. Knowledge of security system design tools, methods, and techniques.
 	K0174. Knowledge of networking protocols.
@@ -200,7 +202,8 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	K0276. Knowledge of security management.
 	S0022. Skill in designing countermeasures to identified security risks.
 	S0031. Skill in developing and applying security system access controls.
-	S0147. Skill in assessing security controls based on cybersecurity principles and tenets. (e.g., CIS CSC, NIST SP 800-53, Cybersecurity Framework, etc.).
+	S0147. Skill in assessing security controls based on cybersecurity principles and tenets. (e.g., CIS CSC, 
+	NIST SP 800-53, Cybersecurity Framework, etc.).
 
 ## CAE Knowledge Units
 
@@ -218,7 +221,8 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	58. Knowledge of known vulnerabilities from alerts, advisories, errata, and bulletins
 	63. Knowledge of information assurance (IA) principles and organizational requirements that are 
 	relevant to confidentiality, integrity, availability, authentication, and non-repudiation
-	70. Knowledge of information technology (IT) security principles and methods (e.g., firewalls, demilitarized zones, encryption)
+	70. Knowledge of information technology (IT) security principles and methods (e.g., firewalls, 
+	demilitarized zones, encryption)
 	90. Knowledge of operating systems
 
 ## NICE Framework 1.0 Competencies
