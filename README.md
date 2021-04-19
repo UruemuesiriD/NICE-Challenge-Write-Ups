@@ -36,4 +36,4 @@ Lab Write Ups for previous NICE Challenge(s)
 	Specialty Area: Systems Analysis
 	Work Role: Systems Security Analyst
 	Task Description: Coordinate with systems architects and developers, as needed, to provide oversight 
-                  in the development of design solutions. 
+        in the development of design solutions. 
