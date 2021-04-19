@@ -82,13 +82,13 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 				□ Richard LeGrand
 				□ Thanh Akasaka.
    
-   Create OU
+     Create OU
   
 	<img src="Images/OU.PNG" >
   
-  Add users to OU
+     Add users to OU
   
-  <img src="Images/OU-add-Users.PNG" >
+  	<img src="Images/OU-add-Users.PNG" >
   
 2. Created New GPO Named DasAmdin root Domain (DesSecGroup) level of AD
 
@@ -98,14 +98,14 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 		○ Right click on the DasAdmin GPO
 		○ Click Enforced
 	
-  Create new GPO DasAdmins
+     Create new GPO DasAdmins
   
-  <img src="Images/GPO.PNG" >
-  <img src="Images/GPO2.PNG" >
+  	<img src="Images/GPO.PNG" >
+  	<img src="Images/GPO2.PNG" >
   
-  Enforce new GPO DasAdmins
+     Enforce new GPO DasAdmins
   
-  <img src="Images/GPO2-enforce.PNG" >
+  	<img src="Images/GPO2-enforce.PNG" >
    
 3. Linked the created DesAdmins to the ad.daswebs.com
 
@@ -118,42 +118,42 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	
     Link the created DesAdmins to the ad.daswebs.com
   
-  <img src="Images/GPO2-link.PNG" >
+  	<img src="Images/GPO2-link.PNG" >
   
-   Enforce the linked DesAdmins to the ad.daswebs.com
+    Enforce the linked DesAdmins to the ad.daswebs.com
    
-   <img src="Images/GPO2-link-enforced.PNG" >
+      <img src="Images/GPO2-link-enforced.PNG" >
   
 4. Built-In Administrator Group Updated to Contain Domain Admins and TechAdmins Within Group Policy 
-  Built-in Administrators Group Updated to Delete Member Users and Group users Within Group Policy
+   Built-in Administrators Group Updated to Delete Member Users and Group users Within Group Policy
   
-	○ Under The Created DasAdmin GPO
-	○ Edith The DasAdmin GPO
-	○ right click and Edith
-	○ Under users Configuration
-	○ Preference >Control panel settings > Local Users and Groups
-	○ Right Click then > New > local group
-	○ Under action set to Update
-	○ Group name : Select … to  search for Administrator {built in} from the drop down
-	○ Rename to: leave blank
-	○ Description: Add the description of what this will do
-	○ Select delete all member user
-	○ Added user to the created  administrators group:
+	   ○ Under The Created DasAdmin GPO.
+	   ○ Edith The DasAdmin GPO.
+	   ○ right click and Edith.
+	   ○ Under users Configuration.
+	   ○ Preference >Control panel settings > Local Users and Groups.
+	   ○ Right Click then > New > local group.
+	   ○ Under action set to Update
+	   ○ Group name : Select … to  search for Administrator {built in} from the drop down
+	   ○ Rename to: leave blank
+	   ○ Description: Add the description of what this will do
+	   ○ Select delete all member user
+	   ○ Added user to the created  administrators group:
 		§ Domain Admins and TechAdmins
 	
-  Add Built-in Administrator to local group
+  	
+	Add Built-in Administrator to local group
+   	<img src="Images/GPO-Restrictions.png" >
+   	<img src="Images/GPO-Restrictions2.png" >
   
-   <img src="Images/GPO2-Restrictions.png" >
-   <img src="Images/GPO2-Restrictions2.png" >
+  	Check the delete all member user and group
   
-  Check the delete all member user and group
+  	<img src="Images/GPO-Restrictions3.png" >
   
-  <img src="Images/GPO2-Restrictions3.png" >
+  	Added user to the created administrators group.
   
-  Added user to the created administrators group.
-  
-  <img src="Images/GPO2-Restrictions4.png" >
-  <img src="Images/GPO2-Restrictions5.png" >
+  	<img src="Images/GPO-Restrictions4.png" >
+  	<img src="Images/GPO-Restrictions5.png" >
   
   5. Added TechAdmins and Domain Admins to Restricted Group
 	
@@ -165,24 +165,24 @@ To recap...Fix the identified local admin security vulnerability with AD changes
 	○ Click on the Administrator you added and the click properties
 	○ Under Members of this Group: Add the TechAdmins and the Domain Admins Groups
 	○ Under This group is a member of: Add Administrators
-	○ Click okay
-
-  Add user to restricted group
-      First add the built-in Administrators group 
+	○ Click okay.
+	
+   Add user to restricted group
+   First add the built-in Administrators group 
       
-  <img src="Images/GPO2-Restrictions6.png" >
-  <img src="Images/GPO2-Restrictions7.png" >
-  <img src="Images/GPO2-Restrictions8.png" >
-  <img src="Images/GPO2-Restrictions9.png" >
-  <img src="Images/GPO2-Restrictions10.png" >
+   <img src="Images/GPO-Restrictions6.png" >
+   <img src="Images/GPO-Restrictions7.png" >
+   <img src="Images/GPO-Restrictions8.png" >
+   <img src="Images/GPO-Restrictions9.png" >
+   <img src="Images/GPO-Restrictions10.png" >
   
   Add user Domain Admins & TechAdmins to the created restricted Administrators group
   
-  <img src="Images/GPO2-Restrictions11.png" >
-  <img src="Images/GPO2-Restrictions12.png" >
+  <img src="Images/GPO-Restrictions11.png" >
+  <img src="Images/GPO-Restrictions12.png" >
   
   Completed 
   
-  <img src="Images/Finish.png" >
+  <img src="Images/Finish1.1.png" >
   
   
