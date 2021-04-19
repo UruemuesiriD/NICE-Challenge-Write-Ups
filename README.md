@@ -29,3 +29,11 @@ Lab Write Ups for previous NICE Challenge(s)
 	Work Role: Systems Security Analyst
 	Task Description: Perform security reviews, identify gaps in security architecture, and develop a security 
 	risk management plan. (T0177
+[Challenge 23: Local Admin No More, Security By Design](https://github.com/pendaflex247/NICE-Challenge-Write-Ups/blob/main/23:%20Local%20Admin%20No%20More%2C%20Security%20By%20Design/README.md)
+
+	Author: Brendan Higgins
+	Framework Category: Operate and Maintain
+	Specialty Area: Systems Analysis
+	Work Role: Systems Security Analyst
+	Task Description: Coordinate with systems architects and developers, as needed, to provide oversight 
+                  in the development of design solutions. 
