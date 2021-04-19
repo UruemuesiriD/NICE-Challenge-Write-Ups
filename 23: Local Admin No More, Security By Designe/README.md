@@ -125,64 +125,64 @@ To recap...Fix the identified local admin security vulnerability with AD changes
    <img src="Images/GPO2-link-enforced.PNG" >
   
 4. Built-In Administrator Group Updated to Contain Domain Admins and TechAdmins Within Group Policy 
-	Built-in Administrators Group Updated to Delete Member Users and Group users Within Group Policy
+  Built-in Administrators Group Updated to Delete Member Users and Group users Within Group Policy
   
-		○ Under The Created DasAdmin GPO
-		○ Edith The DasAdmin GPO
-		○ right click and Edith
-		○ Under users Configuration
-		○ Preference >Control panel settings > Local Users and Groups
-		○ Right Click then > New > local group
-		○ Under action set to Update
-		○ Group name : Select … to  search for Administrator {built in} from the drop down
-		○ Rename to: leave blank
-		○ Description: Add the description of what this will do
-		○ Select delete all member user
-		○ Added user to the created  administrators group:
-			§ Domain Admins and TechAdmins
+	○ Under The Created DasAdmin GPO
+	○ Edith The DasAdmin GPO
+	○ right click and Edith
+	○ Under users Configuration
+	○ Preference >Control panel settings > Local Users and Groups
+	○ Right Click then > New > local group
+	○ Under action set to Update
+	○ Group name : Select … to  search for Administrator {built in} from the drop down
+	○ Rename to: leave blank
+	○ Description: Add the description of what this will do
+	○ Select delete all member user
+	○ Added user to the created  administrators group:
+		§ Domain Admins and TechAdmins
 	
   Add Built-in Administrator to local group
   
-   <img src="Images/GPO2-Restrictions.PNG" >
-   <img src="Images/GPO2-Restrictions2.PNG" >
+   <img src="Images/GPO2-Restrictions.png" >
+   <img src="Images/GPO2-Restrictions2.png" >
   
   Check the delete all member user and group
   
-  <img src="Images/GPO2-Restrictions3.PNG" >
+  <img src="Images/GPO2-Restrictions3.png" >
   
   Added user to the created administrators group.
   
-  <img src="Images/GPO2-Restrictions4.PNG" >
-  <img src="Images/GPO2-Restrictions5.PNG" >
+  <img src="Images/GPO2-Restrictions4.png" >
+  <img src="Images/GPO2-Restrictions5.png" >
   
   5. Added TechAdmins and Domain Admins to Restricted Group
 	
-		  ○ Under computer configuration > windows Settings> Security Settings> Restricted Groups
-		  ○ Right click on restricted Groups
-		  ○ Click on Add group
-		  ○ Click on browse
-		  ○ Click Okay
-		  ○ Click on the Administrator you added and the click properties
-		  ○ Under Members of this Group: Add the TechAdmins and the Domain Admins Groups
-		  ○ Under This group is a member of: Add Administrators
-		  ○ Click okay
+	○ Under computer configuration > windows Settings> Security Settings> Restricted Groups
+	○ Right click on restricted Groups
+	○ Click on Add group
+	○ Click on browse
+	○ Click Okay
+	○ Click on the Administrator you added and the click properties
+	○ Under Members of this Group: Add the TechAdmins and the Domain Admins Groups
+	○ Under This group is a member of: Add Administrators
+	○ Click okay
 
   Add user to restricted group
       First add the built-in Administrators group 
       
-  <img src="Images/GPO2-Restrictions6.PNG" >
-  <img src="Images/GPO2-Restrictions7.PNG" >
-  <img src="Images/GPO2-Restrictions8.PNG" >
-  <img src="Images/GPO2-Restrictions9.PNG" >
-  <img src="Images/GPO2-Restrictions10.PNG" >
+  <img src="Images/GPO2-Restrictions6.png" >
+  <img src="Images/GPO2-Restrictions7.png" >
+  <img src="Images/GPO2-Restrictions8.png" >
+  <img src="Images/GPO2-Restrictions9.png" >
+  <img src="Images/GPO2-Restrictions10.png" >
   
   Add user Domain Admins & TechAdmins to the created restricted Administrators group
   
-  <img src="Images/GPO2-Restrictions11.PNG" >
-  <img src="Images/GPO2-Restrictions12.PNG" >
+  <img src="Images/GPO2-Restrictions11.png" >
+  <img src="Images/GPO2-Restrictions12.png" >
   
   Completed 
   
-  <img src="Images/Finish.PNG" >
+  <img src="Images/Finish.png" >
   
   
