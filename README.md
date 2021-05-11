@@ -37,3 +37,11 @@ Lab Write Ups for previous NICE Challenge(s)
 	Work Role: Systems Security Analyst
 	Task Description: Coordinate with systems architects and developers, as needed, to provide oversight 
 	in the development of design solutions. 
+
+[Challenge 24 Dangerous Drives](https://github.com/pendaflex247/NICE-Challenge-Write-Ups/blob/main/24%20Dangerous%20Drives/README.md)
+
+	Author: Brendan Higgins
+	Framework Category: Investigate
+	Specialty Area: Digital Forensics
+	Work Role: Law Enforcement/CounterIntelligence Forensics
+	Task Description: Perform virus scanning on digital media. (T0285)
